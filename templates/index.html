@@ -1,0 +1,370 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joye's Cleaning Services - Premium Cleaning Services in Nigeria</title>
+      <link rel="stylesheet" href="/static/style.css">
+      <link rel="icon" type="image/png" href="images/joyes logo cut out - Copy.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+              <img src="/static/images/joyes-logo.png" alt="Joyes logo" class="logo-icon">
+                <span>Joyes Cleaning Services </span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#booking" class="cta-nav">Book Now</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Professional Cleaning Services Across Nigeria Ogbomosho & Osogbo</h1>
+                <p>Experience spotless spaces with our expert cleaning team. From homes to offices, we deliver excellence every time.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Get Free Quote</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">1500+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+<div class="hero-image">
+  <video id="joyesVideo" autoplay muted playsinline>
+    <source src="/static/videos/joyes-video-6.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const videos = [
+    "/static/videos/joyes-video-6.mp4",
+    "/static/videos/joyes-video-5.mp4",
+    "/static/videos/joyes-video-4.mp4",
+    "/static/videos/joyes-video-3.mp4",
+    "/static/videos/joyes-video-2.mp4"
+  ];
+
+  let current = 0;
+  const video = document.getElementById("joyesVideo");
+
+  video.addEventListener('ended', () => {
+    video.style.opacity = 0; // fade out
+
+    setTimeout(() => {
+      current = (current + 1) % videos.length;
+      video.querySelector("source").src = videos[current];
+      video.load();
+      video.play();
+      video.style.opacity = 1; // fade in
+    }, 800);
+  });
+</script>
+
+<style>
+.hero-image {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#joyesVideo {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  object-fit: cover; /* use 'contain' if you want full video visible */
+  border-radius: 20px;
+  opacity: 1;
+  background: #000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: opacity 1s ease;
+}
+</style>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Premium Services</h2>
+        <p class="section-subtitle">Tailored cleaning solutions for every need</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Residential Cleaning</h3>
+                <p>Complete home cleaning services including deep cleaning, regular maintenance, and move-in/move-out cleaning for homes and apartments.</p>
+                <div class="service-price">From ₦25,000</div>
+                <a href="#booking" class="learn-more">Book Now →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Office Cleaning</h3>
+                <p>Professional office cleaning services to maintain a pristine and productive work environment. Daily, weekly, or monthly plans available.</p>
+                <div class="service-price">From ₦35,000</div>
+                <a href="#booking" class="learn-more">Book Now →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Deep Cleaning</h3>
+                <p>Intensive cleaning service covering every corner of your space. Perfect for seasonal cleaning or special occasions.</p>
+                <div class="service-price">From ₦40,000</div>
+                <a href="#booking" class="learn-more">Book Now →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🪟</div>
+                <h3>Window Cleaning</h3>
+                <p>Crystal-clear window cleaning services for residential and commercial properties. Interior and exterior cleaning available.</p>
+                <div class="service-price">From ₦10,000</div>
+                <a href="#booking" class="learn-more">Book Now →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛋️</div>
+                <h3>Upholstery Cleaning</h3>
+                <p>Professional furniture and upholstery cleaning to restore freshness and extend the life of your valuable pieces.</p>
+                <div class="service-price">From ₦12,000</div>
+                <a href="#booking" class="learn-more">Book Now →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏭</div>
+                <h3>Post-Construction</h3>
+                <p>Specialized cleaning after renovation or construction work. We handle dust, debris, and leave your space move-in ready.</p>
+                <div class="service-price">From ₦60,000</div>
+                <a href="#booking" class="learn-more">Book Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="why-us-content">
+            <div>
+                <h2 class="section-title" style="text-align: left;">Why Choose Joye's Cleaning Services ?</h2>
+                <p class="section-subtitle" style="text-align: left;">We're committed to excellence in every detail</p>
+            </div>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <div>
+                        <h4>Fully Insured & Bonded</h4>
+                        <p>Your property is protected with comprehensive insurance coverage. Peace of mind guaranteed.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div>
+                        <h4>Trained Professionals</h4>
+                        <p>Our team undergoes rigorous training and background checks to ensure top-quality service.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌿</div>
+                    <div>
+                        <h4>Eco-Friendly Products</h4>
+                        <p>We use environmentally safe, non-toxic cleaning products that are gentle on your family and pets.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div>
+                        <h4>Same-Day Service</h4>
+                        <p>Need urgent cleaning? We offer same-day service across Lagos, Abuja, and Port Harcourt.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💯</div>
+                    <div>
+                        <h4>100% Satisfaction</h4>
+                        <p>Not happy? We'll re-clean for free. Your satisfaction is our top priority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="booking" id="booking">
+  <div class="booking-container">
+    <h2 class="section-title" style="color: white;">Book Your Cleaning Service</h2>
+    <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Get a free quote in minutes. No hidden fees!</p>
+
+    <div class="booking-form">
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="080xxxxxxxx">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Type *</label>
+            <select id="service" name="service" required>
+              <option value="">Select Service</option>
+              <option value="residential">Residential Cleaning</option>
+              <option value="office">Office Cleaning</option>
+              <option value="deep">Deep Cleaning</option>
+              <option value="window">Window Cleaning</option>
+              <option value="upholstery">Upholstery Cleaning</option>
+              <option value="construction">Post-Construction</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <!-- Response message -->
+        <p id="response" style="margin-top: 15px;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="testimonials" id="testimonials">
+  <h2 class="section-title">What Our Clients Say</h2>
+  <p class="section-subtitle">Real experiences from happy customers</p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"Joyes Cleaning transformed my apartment! The team was professional, on time, and left everything spotless. Highly recommend!"</p>
+      <h4>– Grace O., Lagos</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Excellent service. I booked them for post-construction cleaning and was amazed at how detailed they were. Worth every naira!"</p>
+      <h4>– Tunde A., Abuja</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"They cleaned our office space in record time and did an amazing job. We'll definitely keep using their services monthly."</p>
+      <h4>– Chioma E., Port Harcourt</h4>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("bookingForm");
+  const responseText = document.getElementById("response");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    // Gather all input values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
+
+    try {
+      const response = await fetch("http://127.0.0.1:5000/api/send-quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, service, message })
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        responseText.textContent = "✅ Message sent successfully!";
+        responseText.style.color = "green";
+        form.reset();
+      } else {
+        responseText.textContent = "❌ " + data.message;
+        responseText.style.color = "red";
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      responseText.textContent = "⚠️ Unable to connect to the server.";
+      responseText.style.color = "orange";
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <img src="images/joyes logo cut out - Copy.png" alt="Joyes Logo" class="footer-logo">
+      <p>Joye’s Cleaning Services provides top-notch residential, office, and industrial cleaning across Nigeria. We ensure your space stays fresh, spotless, and safe.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#booking">Book a Service</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>📍 Ogbomosho, Nigeria</p>
+      <p>📍 Osogbo, Nigeria</p>
+
+      <p>📞  +234 816 854 9263 </p>
+      <p>📧 Joyescleaningservices@gmail.com</p>
+    </div>
+
+ <div class="footer-social">
+  <h4>Follow Us</h4>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/1FvgF4r3T5/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/joyes_cleaning_services?igsh=MWZidjgxM3Y5YXRjdg%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@joyes.cleaning.service?_r=1&_t=ZS-91J8cahkWPp" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+</div>
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Joye’s Cleaning Services. All rights reserved.</p>
+  </div>
+</footer>
