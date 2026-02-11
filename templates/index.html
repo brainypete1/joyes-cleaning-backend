@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const message = document.getElementById("message").value;
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/send-quote", {
+      const response = await fetch("/api/send-quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, service, message })
