@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 flask
 flask-cors
 flask-mail
 gunicorn
-=======
 flask
 flask-cors
 flask-mail
 gunicorn
->>>>>>> c7e120692b2e87c650333de66773fcce15b9ca77
